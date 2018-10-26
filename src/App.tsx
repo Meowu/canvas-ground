@@ -2,6 +2,7 @@ import * as React from 'react';
 import './App.css';
 import Shape from './pages/Shape'
 import BarChart from './components/BarChart'
+import PieChart from './components/PieChart'
 
 import logo from './logo.svg';
 
@@ -17,6 +18,7 @@ class App extends React.Component {
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
         <BarChart />
+        <PieChart />
         <Shape />
       </div>
     );

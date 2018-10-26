@@ -15,6 +15,7 @@ class BarChart extends React.Component {
 
     ctx.fillStyle = '#FFF'
     ctx.fillRect(0, 0, width, height)
+    ctx.strokeRect(0, 0, width, height)
 
     ctx.fillStyle = 'lightblue'
     data.forEach((dp: number, index: number) => {
