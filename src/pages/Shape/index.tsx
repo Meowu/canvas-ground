@@ -4,7 +4,7 @@ import * as React from 'react'
 class Shape extends React.Component {
 
   public componentDidMount() {
-    const canvas: HTMLCanvasElement = document.getElementById('canvas') as HTMLCanvasElement
+    const canvas: HTMLCanvasElement = document.getElementById('shape') as HTMLCanvasElement
 
     const ctx: CanvasRenderingContext2D = canvas.getContext('2d') as CanvasRenderingContext2D
 
@@ -74,7 +74,7 @@ class Shape extends React.Component {
 
   public render() {
     return (
-      <canvas id="canvas" width="800" height="600" />
+      <canvas id="shape" width="800" height="600" />
     )
   }
 }
