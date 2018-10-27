@@ -3,6 +3,7 @@ import './App.css';
 import Shape from './pages/Shape'
 import BarChart from './components/BarChart'
 import PieChart from './components/PieChart'
+import SolarSystem from './pages/SolarSystem'
 
 import logo from './logo.svg';
 
@@ -19,6 +20,7 @@ class App extends React.Component {
         </p>
         <BarChart />
         <PieChart />
+        <SolarSystem />
         <Shape />
       </div>
     );
