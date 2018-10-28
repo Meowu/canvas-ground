@@ -5,6 +5,7 @@ import BarChart from './components/BarChart'
 import PieChart from './components/PieChart'
 import SolarSystem from './pages/SolarSystem'
 import MsgBox from './pages/MessageBox'
+import CanvasState from './pages/State/index';
 
 import logo from './logo.svg';
 
@@ -23,6 +24,7 @@ class App extends React.Component {
         <PieChart />
         <SolarSystem />
         <MsgBox />
+        <CanvasState />
         <Shape />
       </div>
     );
