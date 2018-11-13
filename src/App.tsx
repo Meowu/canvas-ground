@@ -6,10 +6,29 @@ import PieChart from './components/PieChart'
 import SolarSystem from './pages/SolarSystem'
 import MsgBox from './pages/MessageBox'
 import CanvasState from './pages/State/index';
-
 import logo from './logo.svg';
 
+import { Greeter } from './generated/proto/web_pb_service'
+import { HelloRequest } from './generated/proto/web_pb'
+import { grpc } from 'grpc-web-client'
+
+const host: string = 'http://192.168.0.190:11111'
+
+
 class App extends React.Component {
+
+
+  public componentDidMount() {
+    const helloRequest = new HelloRequest()
+    helloRequest.setName('gRPC')
+    grpc.unary(Greeter.SayHello, {
+      request: helloRequest,
+      host,
+      onEnd: (res: any) =>  {
+        console.log(res.message.toObject())
+      }
+    })
+  }
   public render() {
     return (
       <div className="App">

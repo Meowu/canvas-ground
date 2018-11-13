@@ -4,13 +4,15 @@
     "exclude": [
       "config/**/*.js",
       "node_modules/**/*.ts",
-      "coverage/lcov-report/*.js"
+      "coverage/lcov-report/*.js",
+      "src/generated/**/*"
     ]
   },
   "rules": {
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "no-console": false,
+    "variable-name": [true, "check-format", "allow-snake-case", "allow-leading-underscore"],
     "max-file-line-count": [
       true,
       500
